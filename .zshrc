@@ -6,7 +6,7 @@ ZSH_THEME="spaceship"
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_CHAR_SYMBOL="[🐡] ➜ "
+SPACESHIP_CHAR_SYMBOL="[] ➜ "
 
 # Theme batcat
 BAT_THEME="Dracula"
@@ -79,10 +79,10 @@ alias dnfu='sudo dnf update'
 alias dnfa='sudo dnf autoremove'
 alias dnfs='dnf search'
 
-#alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
+alias ls='lsd'
+alias l='lsd -l'
+alias la='lsd -a'
+alias lla='lsd -la'
 alias lt='lsd --tree'
 #alias bat='batcat'
 alias nerd='nerdfetch && echo ""'

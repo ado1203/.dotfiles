@@ -18,7 +18,6 @@ set showtabline=2
 set spelllang=en,es
 set hidden
 
-so ~/.config/nvim/themes/citylights.vim
 so ~/.config/nvim/.vim/plugins.vim
 so ~/.config/nvim/.vim/plugin-config.vim
 so ~/.config/nvim/.vim/maps.vim
