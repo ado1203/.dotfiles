@@ -31,5 +31,4 @@ let g:lightline = {'colorscheme' : 'tokyonight'}
 let g:airline_theme = "tokyonight"
 
 colorscheme tokyonight
-
 "colorscheme nord 

@@ -1,15 +1,9 @@
-
 # Path to your oh-my-zsh installation.
 export ZSH="/home/adonay/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_PROMPT_SEPARATE_LINE=false
-SPACESHIP_CHAR_SYMBOL="[] ➜ "
-
-# Theme batcat
-BAT_THEME="Dracula"
 
 plugins=(
     z
@@ -50,11 +44,16 @@ csNewConsole() {
     mkdir $* && cd $* && dotnet new console && code . && clear
 }
 
+wikipedia() {
+    wikit $@ --line $(($COLUMNS-4)) --link
+}
+
 alias runCs="dotnet bin/Debug/net5.0/*.dll"
 alias csRun="dotnet run"
 alias ext="extract"
 alias f.="nautilus ."
 alias arbolito="git log --all --graph --decorate --oneline"
+alias vifm='bash ~/.config/vifm/scripts/vifmrun'
 
 convertirVideo() {
     ffmpeg -i $1 -c:v libx264 -c:a aac $2
@@ -86,9 +85,9 @@ alias lla='lsd -la'
 alias lt='lsd --tree'
 #alias bat='batcat'
 alias nerd='nerdfetch && echo ""'
-alias neo='neofetch'
 alias yt='youtube-dl'
 alias ytoa='youtube-dl -x'
+alias vim='nvim'
 
 
 #fm6000 -c bright_cyan -m 8 -g 8 -l 20
@@ -104,8 +103,3 @@ PATH="$PATH:$HOME/.config/rofi/applets/menu"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionfpath=($fpath "/home/adonay/.zfunctions")
-
-# Set Spaceship ZSH as a prompt
-autoload -Uz promptinit
-promptinit
-prompt restore

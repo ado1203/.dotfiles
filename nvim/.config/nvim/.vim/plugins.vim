@@ -16,9 +16,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Themes
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'shinchu/lightline-gruvbox.vim'
-Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'saltdotac/citylights.vim'
+Plug 'vim-airline/vim-airline-themes'
 
 " Tree
 Plug 'scrooloose/nerdtree'
