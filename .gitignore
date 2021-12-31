@@ -5,3 +5,4 @@ nvim/.config/nvim/plugged/*
 nvim/.config/nvim/plugins/*
 nvim/.config/nvim/session/*
 nvim/.config/nvim/themes/*
+vifm/.config/vifm/vifminfo.json

@@ -1,4 +1,3 @@
-
 " {{{ General config 
 " This is the actual command used to start vi.  The default is vim.
 " If you would like to use another vi clone such as Elvis or Vile
@@ -184,7 +183,7 @@ fileviewer <video/*>
         \ vifmimg clear
 
 " Images
-filextype <image/*> mpv %c %i </dev/null &>/dev/null &
+filextype <image/*> feh %c %i </dev/null &>/dev/null &
 fileviewer <image/*>
         \ vifmimg draw %px %py %pw %ph %c
         \ %pc

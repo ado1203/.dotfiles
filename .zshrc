@@ -4,6 +4,7 @@ export ZSH="/home/adonay/.oh-my-zsh"
 ZSH_THEME="spaceship"
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_PROMPT_SEPARATE_LINE=false
 
 plugins=(
     z
@@ -89,6 +90,7 @@ alias yt='youtube-dl'
 alias ytoa='youtube-dl -x'
 alias vim='nvim'
 
+export PATH=$HOME/.config/rofi/bin:$PATH
 
 #fm6000 -c bright_cyan -m 8 -g 8 -l 20
 # Para Deno
@@ -99,7 +101,11 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 #PATH="$PATH:$HOME/Documentos/curso_linux/Comandos"
 PATH="$PATH:$HOME/.config/rofi/applets/menu"
 
+export PATH="${PATH}:${HOME}/.local/bin/"
+
 # Gestor de versiones de node js
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completionfpath=($fpath "/home/adonay/.zfunctions")
+
+cd
