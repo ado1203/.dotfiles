@@ -2,7 +2,7 @@
 	name = Adonay Gutiérrez
 	email = adonaygutierrez50@gmail.com
 [core]
-	editor = flatpak run --file-forwarding re.sonny.Commit @@
+	editor = nvim
 	autocrlf = input
 [init]
 	defaultBranch = master
